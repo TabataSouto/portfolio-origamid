@@ -34,17 +34,62 @@ header h3 {
 .menu {
   display: grid;
   justify-content: end;
-  & ul {
-    display: flex;
-    gap: 0 40px;
-    & li a {
-      font-size: 1.125rem;
-      color: #000;
-    }
-  }
+}
+
+.menu ul {
+  display: flex;
+  gap: 0 40px;
+}
+
+.menu li a {
+  font-size: 1.125rem;
+  color: #000;
+}
+
+/* ESTILIZAÇÃO TITULO */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  margin-top: 5rem;
+}
+
+.infos {
+  position: relative;
+  padding: 40px;
+}
+
+.infos h1 {
+  font-size: 4.5rem;
+  word-wrap: break-word;
+  max-width: 530px;
+}
+
+.infos p {
+  font-size: 1.125rem;
+  color: #525252;
+  margin-top: 1.625rem;
+}
+
+.infos img {
+  position: absolute;
+  top: 28px;
+  left: -5px;
+  z-index: -1;
+}
+
+.picture img {
+  object-fit: cover;
+  max-width: 360px;
+  margin: auto;
 }
 
 
+/* ESTILIZAÇÃO MOBILE */
 @media (max-width: 800px) {
   .menu {
     display: none;
