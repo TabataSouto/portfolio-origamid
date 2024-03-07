@@ -1,10 +1,10 @@
 .experience {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 100px 20px 40px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
+  gap: 80px;
 }
 
 .subtitle {
@@ -85,6 +85,7 @@
   .experience {
     grid-template-columns: 1fr;
     justify-content: center;
+    padding-top: 50px;
     gap: 0px;
   }
 
