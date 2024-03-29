@@ -1,0 +1,164 @@
+.formation {
+  background: #141414;
+}
+
+.container-formation {
+  max-width: 1200px;
+  padding: 100px 20px 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.container-formation::after {
+  background: url("../img/detail.svg") no-repeat center;
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formation .subtitle {
+  color: #000000;
+  max-width: 5ch;
+}
+
+.formation-text {
+  font-size: 1.4rem;
+  line-height: 1.33;
+  color: #a3a3a3;
+  max-width: 40ch;
+  margin-bottom: 3.75rem;
+}
+
+.formation-text strong {
+  color: #ffffff;
+}
+
+.formations h3 {
+  color: #ffff;
+}
+
+.formation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.formations {
+  background: #000000;
+  border-radius: 4px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.formation-type {
+  color: #a3a3a3;
+  font-size: 0.875rem;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+}
+
+.formation-title {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.formation-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: url('../img/detail.svg') no-repeat center;
+  position: absolute;
+  left: -24px;
+}
+
+.formation-institution {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.extra-courses > div > h3, div > ul > li > p {
+  color: #ffff;
+}
+
+.courses {
+  margin-bottom: 2.5rem;
+}
+
+.extra-courses h3 {
+  columns: #a3a3a3;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.extra-courses h3::before {
+  background: url("../img/book.svg") no-repeat center center;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.extra-courses ul {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.course-list {
+  list-style: decimal;
+  margin-left: 0.938rem;
+}
+
+.course-list li {
+  color: #a3a3a3;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 2px 0;
+}
+
+
+.extra-courses span {
+  color: #a3a3a3;
+}
+
+@media (max-width: 800px) {
+  .container-formation {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .formation .subtitle {
+    color: #ffff;
+  }
+
+  .formation-text {
+    font-size: 1.25rem;
+    margin: auto;
+    padding: 20px 0 60px ;
+  }
+
+  .extra-courses h3 {
+    margin-left: 35px;
+  }
+}

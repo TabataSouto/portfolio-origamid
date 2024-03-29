@@ -30,7 +30,7 @@ img {
 @media (max-width: 800px) {
   .subtitle {
     font-size: 3rem;
-    max-width: 100%;
+    max-width: initial !important;
     text-align: center;
   }
 }
