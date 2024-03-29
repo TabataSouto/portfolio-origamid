@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Fira Sans", Arial, sans-serif;
+  font-family: "Fira Sans", sans-serif, Arial;
   color: #141414;
   scroll-behavior: smooth;
 }
